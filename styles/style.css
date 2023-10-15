@@ -106,11 +106,9 @@ ol {
   cursor: pointer;
 }
 
-.search-form__label-text:hover {
+.search-form__label:hover > .search-form__label-text {
   text-decoration: underline;
 }
-
-/*.search-form__label:has()*/
 
 .search-form__textfield {
   color: rgba(255, 255, 255, 0.70);
@@ -262,19 +260,6 @@ ol {
   
 }
 
-.preloader-template {
-  
-}
-.preloader {
-}
-.preloader-chasing-squares {
-}
-.square {
-}
-
-.cards-list-item-template {
-}
-  
 .content__list-item {
   width: 100%;
 }
@@ -341,13 +326,6 @@ ol {
 
 .more-button {
   width: 399px;
-}
-
-.error-template {
-}
-.error {
-}
-.error__title {
 }
 
 .visually-hidden {
