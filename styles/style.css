@@ -18,6 +18,7 @@ html {
   background-color: #1b1919;
   display: flex;
   align-items: center;
+  padding: 133px 30px;
 }
 
 h1,
@@ -64,7 +65,8 @@ ol {
 
 .result__video {
   width: 100%;
-  
+  object-fit: cover;
+  object-position: center;
 }
 
 .search-form {
@@ -84,7 +86,6 @@ ol {
 
 .search-form__fieldset-title {
   color: #FFF;
-  font-family: Fira Sans Condensed;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -99,8 +100,7 @@ ol {
 }
 
 .search-form__label-text {
-  color: rgba(255, 255, 255, 0.70);
-  font-family: Fira Sans Condensed;
+  color: #FFF;
   font-size: 18px;
   font-weight: 400;
   cursor: pointer;
@@ -111,8 +111,8 @@ ol {
 }
 
 .search-form__textfield {
-  color: rgba(255, 255, 255, 0.70);
-  font-family: Fira Sans Condensed;
+  color: #FFF; /*в макете нет требования к цвету текста ввода - исправлено по замечанию ревьюера*/
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
   background-color: transparent;
@@ -122,6 +122,14 @@ ol {
   border-bottom: solid #FFF 1px;
   width: 225px;
   appearance: none;
+}
+
+.search-form__textfield::placeholder { 
+  color: rgba(255, 255, 255, 0.70);
+  font-family: 'Fira Sans Condensed', sans-serif;
+  ;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .search-form__textfield:focus {
@@ -189,7 +197,7 @@ ol {
   background-color: transparent;
   color: #FFF;
   text-align: center;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -226,7 +234,7 @@ ol {
 
 .title {
   color: #FFF;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -236,7 +244,7 @@ ol {
 
 .content__accent {
   color: #545050;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -254,7 +262,6 @@ ol {
   height: 298px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 30px;
   overflow: auto;
   position: relative;
   
@@ -262,6 +269,11 @@ ol {
 
 .content__list-item {
   width: 100%;
+  margin-bottom: 30px;
+}
+
+.content__list-item:is(:last-child) {
+  margin-bottom: 0;
 }
 
 .content__card-link {
@@ -288,6 +300,7 @@ ol {
   align-items: flex-start;
   justify-content: space-between;
   padding: 2px;
+  height: 103px;
 }
 
 .content__video-card:active {
@@ -299,25 +312,27 @@ ol {
 }
 
 .content__video-card-description-container {
-  width: 100%;
+  width: 200px;
 }
 
 .content__video-card-title {
+  font-family: Oswald, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 700;
 }
 
 .content__video-card-description {
-  font-family: Fira Sans Condensed;
   font-size: 18px;
   font-weight: 400;
   line-height: 90%;
 }
 
 .content__video-card-thumbnail {
-  width: 194px;
-  height: 103px;
+  height: 100%;
+  object-position: center;
   object-fit: cover;
 }
 
