@@ -127,7 +127,6 @@ ol {
 .search-form__textfield::placeholder { 
   color: rgba(255, 255, 255, 0.70);
   font-family: 'Fira Sans Condensed', sans-serif;
-  ;
   font-size: 18px;
   font-weight: 400;
 }
@@ -320,8 +319,6 @@ ol {
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 30px;
-  font-weight: 700;
 }
 
 .content__video-card-description {
@@ -331,6 +328,7 @@ ol {
 }
 
 .content__video-card-thumbnail {
+  width: 194px;
   height: 100%;
   object-position: center;
   object-fit: cover;
